@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/libs/mangbo-spring-boot-bom/pom.xml" />
+        <option value="$PROJECT_DIR$/user-domain/user-management-api/pom.xml" />
       </list>
     </option>
   </component>
