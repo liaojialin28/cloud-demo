@@ -1,7 +1,13 @@
 package org.example.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.example.entity.UserInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.example.model.QueryUserInfoPageDTO;
+import org.example.model.UserInfoDTO;
+import org.example.model.UserInfoVO;
+
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -13,4 +19,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserInfoService extends IService<UserInfo> {
 
+
+    UserInfoVO createNewUser(@Valid UserInfoDTO userInfoDTO);
+
+
+    IPage<UserInfoVO> queryUserPage(QueryUserInfoPageDTO queryUserInfoPageDTO);
 }
