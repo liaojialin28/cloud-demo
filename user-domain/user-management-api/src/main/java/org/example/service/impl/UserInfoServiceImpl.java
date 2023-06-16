@@ -15,6 +15,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -95,5 +96,13 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         pageInfo.setSize(userInfoPage.getSize());
         return pageInfo;
 
+    }
+
+
+    public void deleteUser(Long userId){
+        userInfoMapper.deleteById(userId);
+
+        List list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        userInfoMapper.deleteBatchIds(list);
     }
 }

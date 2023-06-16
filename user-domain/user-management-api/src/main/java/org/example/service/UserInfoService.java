@@ -24,4 +24,6 @@ public interface UserInfoService extends IService<UserInfo> {
 
 
     IPage<UserInfoVO> queryUserPage(QueryUserInfoPageDTO queryUserInfoPageDTO);
+
+    void deleteUser(Long userId);
 }

@@ -45,4 +45,12 @@ public class UserInfoController {
         return ResponseEntity.ok(userInfoService.queryUserPage(queryUserInfoPageDTO));
     }
 
+
+    @DeleteMapping(value = "delete/{userId}")
+    @ApiOperation("删除用户")
+    public ResponseEntity<Void> deleteUser(@PathVariable("userId") Long userId){
+        userInfoService.deleteUser(userId);
+        return ResponseEntity.ok().build();
+    }
+
 }

@@ -1,10 +1,7 @@
 package org.example.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import io.swagger.annotations.ApiModel;
@@ -82,6 +79,7 @@ public class UserInfo implements Serializable {
 
     @ApiModelProperty("删除标识 0：未删除 1：已删除;0：未删除 1：已删除")
     @TableField("delete_flag")
+    @TableLogic(value="0",delval="1")
     private Boolean deleteFlag;
 
     @ApiModelProperty("昵称")

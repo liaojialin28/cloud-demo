@@ -115,6 +115,33 @@
             <version>5.5.2</version>
         </dependency>
 
+<!--        &lt;!&ndash;elastic job&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shardingsphere.elasticjob</groupId>-->
+<!--            <artifactId>elasticjob-lite-core</artifactId>-->
+<!--            <version>3.0.0-alpha</version>-->
+<!--&lt;!&ndash;            <scope>compile</scope>&ndash;&gt;-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shardingsphere.elasticjob</groupId>-->
+<!--            <artifactId>elasticjob-lite-spring-boot-starter</artifactId>-->
+<!--            <version>3.0.0-alpha</version>-->
+<!--&lt;!&ndash;            <scope>compile</scope>&ndash;&gt;-->
+<!--        </dependency>-->
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.curator</groupId>-->
+<!--            <artifactId>curator-recipes</artifactId>-->
+<!--            <version>5.1.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.curator</groupId>-->
+<!--            <artifactId>curator-framework</artifactId>-->
+<!--            <version>5.1.0</version>-->
+<!--        </dependency>-->
+
+
         <!-- knife4j -->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
