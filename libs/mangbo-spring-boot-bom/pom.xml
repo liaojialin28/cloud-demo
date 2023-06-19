@@ -19,11 +19,11 @@
     <artifactId>mangbo-spring-boot-bom</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>../../integration/huawei-client-api</module>
-        <module>../../user-domain/user-management-api</module>
-    </modules>
+
+
     <dependencies>
+
+
 
         <!-- mysql驱动 -->
         <dependency>
@@ -150,4 +150,13 @@
         </dependency>
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>mangbo-share-clients</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

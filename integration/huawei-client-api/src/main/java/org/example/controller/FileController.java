@@ -5,6 +5,7 @@ import com.obs.services.model.DeleteObjectResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import org.example.mangbo.client.UserClient;
 import org.example.service.FileService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ import java.util.List;
 @Api(tags = "文件管理")
 public class FileController {
 
+    private final UserClient userClient;
     private final FileService fileService;
 
     @PostMapping("fileUpload")
@@ -47,6 +49,13 @@ public class FileController {
     public ResponseEntity<DeleteObjectResult> fileDelete(@RequestParam("fileName") String fileName) {
         DeleteObjectResult deleteObjectResult = fileService.fileDelete(fileName);
         return ResponseEntity.ok(deleteObjectResult);
+    }
+
+    @DeleteMapping("asdas/{userId}")
+    @ApiOperation("cs")
+    public ResponseEntity<Void> ad(@PathVariable("userId") Long userId){
+        userClient.quew(userId);
+        return ResponseEntity.ok().build();
     }
 
 

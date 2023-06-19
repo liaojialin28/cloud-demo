@@ -17,6 +17,10 @@ spring:
     url: jdbc:mysql://localhost:3306/mangbo?serverTimezone=GMT%2B8&useUnicode=true&useSSL=false&characterEncoding=utf-8
     username: root
     password: 123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印SQL日志到控制台
 #
 #elastic:
 #  job:
@@ -27,3 +31,5 @@ spring:
 #      - jobClass: com.example.job.MyJob
 #        cron: "0/5 * * * * ?"
 #        shardingTotalCount: 1
+
+

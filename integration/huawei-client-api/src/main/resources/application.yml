@@ -22,3 +22,7 @@ obs:
     bucket: mangbo-bucket #存储 Bucket
     accessKey: MLSFTTXPMUP4RR6PCDZ5 #访问 Key
     accessSecret: SdpokEHLns2DneWxtr8ZHjDmwf5NQzKJf4Q760cr #访问 Secret
+
+feign:
+  user-management-api:
+    addr: http://localhost:8082/

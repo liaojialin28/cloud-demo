@@ -3,7 +3,6 @@ package org.example.service.impl;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.example.entity.UserInfo;
 import org.example.mapper.UserInfoMapper;
 import org.example.model.QueryUserInfoPageDTO;
@@ -37,6 +36,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
     private final PasswordEncoder passwordEncoder;
 
     private final UserInfoMapper userInfoMapper;
+
 
     public boolean isPasswordMatch(String rawPassword, String encodedPassword) {
         return passwordEncoder.matches(rawPassword, encodedPassword);
