@@ -25,4 +25,4 @@ obs:
 
 feign:
   user-management-api:
-    addr: http://localhost:8082/
+    addr: http://localhost:8084/
